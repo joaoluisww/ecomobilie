@@ -1,0 +1,436 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "codesaver";
+    src: url(./font/CodeSaver-Regular.otf);
+}
+
+:root {
+    --branco: #FFFFFF;
+    --preto: #000000;
+    --verde-pixelV: #00c621;
+    --verde-escuro-pixelv: #3C523D;
+    --fundosite: #f3f2f2;
+    --contato: #e5e5e5;
+    --contraste: #A8BD7E;
+}
+
+.container-grid {
+    width: 80vw;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.body {
+    overflow: hidden;
+    background-color: var(--fundosite);
+}
+
+.titulo {
+    display: flex;
+    font-family: "code saver", code saver;
+    font-weight: 600;
+    font-size: 35px;
+    justify-content: center;
+}
+
+/* --------header-------- */
+.banner {
+    background-image: url(./img/imagem\ de\ um\ sófa\ 02.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 -1px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header img {
+    height: 200px;
+}
+
+.container img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+header img {
+    width: 150px;
+    justify-content: space-around;
+}
+
+header .container-grid {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    max-width: 700px;
+    width: 70%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: last baseline;
+}
+
+.menu a {
+    font-size: 20px;
+    color: var(--branco);
+    font-family: "code saver", code saver;
+    text-decoration: underline transparent;
+    text-decoration-thickness: 2px;
+    transition: text-decoration 500ms ease;
+}
+
+.menu a:hover {
+    text-decoration-color: var(--branco);
+}
+
+.conteudo-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteudo-banner img {
+    max-width: 280px;
+    width: 25%;
+}
+
+.secher img {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.conteudo-sobre{
+    display: flex;
+    background-color: #3C523D;
+    font-weight: 900;
+    color: var(--branco);
+}
+
+.conteudo-sobre{
+ 
+}
+
+.img text {
+    display: flex;
+    justify-content: center;
+    background-color: #3C523D;
+
+}
+
+.titulo {}
+
+/* ---------------sobre-------- */
+#sobre {
+    gap: 50px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+#sobre img {
+    max-width: 460px;
+    width: 40%;
+}
+
+#sobre h2 {
+    margin-right: 5px;
+}
+
+#sobre p {
+    font-family: "code saver", code saver;
+    font-size: 20px;
+    text-align: justify;
+    direction: flex;
+    margin-top: 0px;
+}
+
+.titulo h2 {
+    color: var(--branco);
+    margin-bottom: 0;
+    background-color: var(--verde-escuro-pixelv);
+    border-radius: 20px;
+    padding: 10px 18px;
+
+}
+
+.titulo span {
+    color: var(--preto);
+    border-bottom: solid 3px var(--verde-pixelV);
+}
+
+
+
+
+/* ------------parallax------------- */
+#parallax {
+    height: 250px;
+
+    /* background-image: url(./Imgs/parallax.svg); */
+
+    background: linear-gradient(rgba(0, 0, 0, 0.26)), url(./img/parralax\ joao.svg);
+    background-attachment: fixed;
+    background-size: 30%;
+    margin-bottom: 120px;
+
+}
+
+/* ------------------serviços----------------- */
+#servicos {
+    margin-bottom: 120px;
+}
+
+#servicos .titulo {
+    justify-content: center;
+    margin-bottom: 55px;
+}
+
+#servico h2 {
+    margin-left: 5px;
+}
+
+.container-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    position: relative;
+}
+
+
+#servicos .card {
+    width: 300px;
+    margin: 20px;
+    padding: 40px 20px;
+    border-radius: 40px;
+    background-color: #f3f2f2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#servicos .card h3 {
+    font-size: 24px;
+    margin: 5px 0 30px;
+    color: var(--roxo-pixelv);
+    font-family: "Recursive", sans-linear-bold;
+    text-align: center;
+}
+
+#servicos .card p {
+    font-family: "Recursive", sans-linear;
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+#servicos .card svg {
+    color: var(--roxo-pixelv);
+    height: 75px;
+}
+
+#servicos .card:hover {
+    border: solid 3px var(--verde-pixelV);
+}
+
+#servicos .card:hover h3 {
+    color: var(--verde-pixelV);
+}
+
+#servicos .card:hover svg {
+    fill: var(--verde-pixelV);
+}
+
+/* ---------------------------------------- */
+#contato {
+    text-align: center;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+}
+
+#contato .titulo {
+    justify-content: center;
+    margin-bottom: 55px;
+}
+
+#contato h2 {
+    margin-left: 5px;
+}
+
+#contato form {
+    width: 90%;
+    max-width: 980px;
+
+    margin: 0 auto;
+    padding: 60px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 40px;
+    background-color: var(--contraste);
+    border: solid 3px var(--verde-escuro-pixelv);
+
+    color: var(--preto);
+    font-family: "Recursive", sans-linear;
+    font-size: 17px;
+}
+
+.campo {
+    width: 60%;
+
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-bottom: 50px;
+}
+
+.campo-descricao {
+    width: 60%;
+
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+}
+
+.campo input {
+    height: 40px;
+
+    color: var(--preto);
+    background-color: var(--branco);
+
+    border: none;
+    border-radius: 4px;
+
+    text-indent: 10px;
+
+    outline: none;
+}
+
+.campo-descricao textarea {
+    color: var(--preto);
+    background-color: var(--branco);
+
+    border: none;
+    border-radius: 4px;
+
+    outline: none;
+
+    padding: 10px;
+
+    resize: none;
+}
+
+.campo-lable,
+.campo-descricao label {
+    margin-bottom: 15px;
+}
+
+.campo input,
+.campo-descricao textarea {
+    font-family: "Recursive", sans-linear;
+    font-size: 17px;
+}
+
+.campo input:focus,
+.campo-descricao textarea:focus {
+    outline: 2px solid var(--verde-pixelV);
+}
+
+#contato form button {
+    height: 40px;
+    width: 60%;
+
+    background-color: var(--verde-escuro-pixelv);
+    color: var(--branco);
+
+    border: none;
+    border-radius: 4px;
+
+    font-size: 17px;
+    font-family: "Recursive", sans-linear;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition: background-color 500ms;
+}
+
+
+#contato form button:hover {
+    background-color: var(--verde-pixelV);
+}
+
+/* ---------------------footer------ */
+
+footer {
+    height: 250px;
+    background-image: url(./img/370700-fundo-preto-gratis-vetor.png);
+}
+
+footer img {
+    height: 90px;
+}
+
+footer .container-grid {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redes-sociais {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.redes-sociais p {
+    color: var(--branco);
+
+    font-family: "Recursive", sans-linear-bold;
+    font-size: 24px;
+}
+
+.icones-redes {
+    width: 240px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.icones-redes a {
+    color: var(--branco);
+}
+
+.icones-redes a:hover {
+    color: var(--verde-pixelV);
+}
+
